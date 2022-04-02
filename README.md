@@ -1,2 +1,0 @@
-# idka
-sadsad

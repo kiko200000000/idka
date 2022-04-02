@@ -1,0 +1,101 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("BaconDux Hub", "BloodTheme")
+
+local Tab = Window:NewTab("Games")
+local PrisionLifeSection = Tab:NewSection("Prision Life")
+
+
+local MM2Section = Tab:NewSection("Murder Mistery 2")
+
+
+local MadCitySection = Tab:NewSection("Mad City")
+
+
+
+local Tab = Window:NewTab("Credits")
+
+
+local CreditsSection = Tab:NewSection("Credits")
+CreditsSection:NewLabel("Credits: Bendza")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PrisionLifeSection:NewButton("Prision Life New Hack", "For Commands say in the chat ;cmds or :cmds", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife", true))()
+    print("Clicked")
+end)
+
+
+PrisionLifeSection:NewButton("Prision Life Prevail X", "This Hack Is Old But is Working", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+    print("Clicked")
+end)
+
+
+PrisionLifeSection:NewButton("Prision Life Nexus Hub", "This Hack Is Old But is Working", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gwn...", true))()
+    print("Clicked")
+end)
+
+
+
+MM2Section:NewButton("Eclipse mm2", "Is Old But Its Working", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script'),true))()
+    print("Clicked")
+end)
+
+MM2Section:NewButton("MM2 AutoFarm", "You Need To Press The Button When Game Starts", function()
+    loadstring(game:HttpGet(('https://github.com/MarsQQ/ScriptHubScripts/blob/master/MM2Autofarm'),true))()
+    print("Clicked")
+end)
+
+MM2Section:NewButton("Mm2 Admin Panel", "Is Old But Its Working", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+    print("Clicked")
+end)
+
+
+MadCitySection:NewButton("Mad City AutoFarm", "Makes you farm levels and money", function()
+    game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("SetTeam", "Police")
+wait(.70)
+game:GetService("RunService").RenderStepped:Connect(function()
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+  if v.Name == "Handcuffs" then v.Parent = game:GetService("Players").LocalPlayer.Character
+  end
+end
+game:GetService("ReplicatedStorage").Event:FireServer("Eject", game:GetService("Players").LocalPlayer)
+end)
+
+    print("Clicked")
+end)
+
+MadCitySection:NewButton("Mad Lads", "Gives you the script", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/kiko200000000/idk/main/MADLADS'),true))()
+    print("Clicked")
+end)
+
+MadCitySection:NewButton("Mad City Op", "Gives you the script", function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/811e25ec8cfcdaa9ae7026353288783c/raw/4b073a5c1a0a4e2ed7e2304c2e769eb440a371a9/h", true))()
+    print("Clicked")
+end)
